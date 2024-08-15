@@ -2,18 +2,20 @@ package org.test;
 
 import org.openqa.selenium.WebDriver;
 import org.testng.annotations.BeforeMethod;
-
+import org.testng.annotations.Test;
 import java.net.MalformedURLException;
 
-public class ButtonsTest {
-    public static WebDriver driver;
+import static org.assertj.core.api.AssertionsForClassTypes.assertThat;
 
-
+public class ElementsButtonsTest extends BaseTest {
     @BeforeMethod
-    public void setup() throws MalformedURLException{
-
+    public void before(){
+        pageManager.elementsButtons.open();
     }
-
-
-    //40 dk
+    @Test
+    public void clickButton(){
+        pageManager.elementsButtons.buttonPath.click();
+        pageManager.elementsButtons.clickMeButton.click();
+        assertThat(pageManager.elementsButtons.getText()).isEqualTo("You have done a dynamic click");
+    }
 }

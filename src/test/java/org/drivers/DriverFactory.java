@@ -1,10 +1,11 @@
 package org.drivers;
 
+import com.codeborne.selenide.Browsers;
 import com.codeborne.selenide.Configuration;
+import com.codeborne.selenide.Selenide;
+import com.codeborne.selenide.WebDriverRunner;
 import io.github.bonigarcia.wdm.WebDriverManager;
-import org.checkerframework.checker.units.qual.C;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.edge.EdgeDriver;
@@ -16,60 +17,52 @@ import org.utils.PropertyManager;
 
 import java.net.MalformedURLException;
 import java.net.URL;
+import java.util.Objects;
 
 public class DriverFactory {
     static PropertyManager propertyManager =new PropertyManager();
-    static WebDriver getDriver() throws MalformedURLException {
+    public static void setupDriver() {
 
         String browser = propertyManager.getProperty("BROWSER");
-
-        if (browser == null) {
-            WebDriverManager.chromedriver().setup();
-            return new ChromeDriver();
-            // mac kullaniyorsak arch64() eklenmeli  WebDriverManager.chromedriver().arch64().setup();
-        }
 
         Configuration.pageLoadStrategy = "eager";
         Configuration.browserSize = "1920x1080";
         Configuration.holdBrowserOpen = false;
         Configuration.screenshots = false;
-
-
+        Configuration.headless= Objects.equals(propertyManager.getProperty("HEADLESS"),"Y");
+         browser = Objects.equals(propertyManager.getProperty("BROWSER"), null) ? "CHROME" : propertyManager.getProperty("BROWSER");
         switch (browser){
             case "IE":
-                WebDriverManager.iedriver().setup();
-                return new InternetExplorerDriver();
+                Configuration.browser = Browsers.IE;
+                break;
+            case "CHROME":
+                Configuration.browser = Browsers.CHROME;
+                break;
             case "EDGE" :
-                WebDriverManager.edgedriver().setup();
-                return new EdgeDriver();
+                Configuration.browser = Browsers.EDGE;
+                break;
             case "FIREFOX":
-                WebDriverManager.firefoxdriver().setup();
-                return new FirefoxDriver();
+                Configuration.browser = Browsers.FIREFOX;
+                break;
             case "SAFARI":
-                WebDriverManager.safaridriver().setup();
-                return new SafariDriver();
-            case "REMOTE":
-                WebDriverManager.chromedriver().setup();
-                ChromeOptions chromeOptions =new ChromeOptions();
-                chromeOptions.addArguments("--no-sandbox");
-                if ("Y".equalsIgnoreCase(propertyManager.getProperty("HEADLESS"))) {
-                    chromeOptions.addArguments("--headless");
-                }
-                return new RemoteWebDriver(new URL("http://localhost:4444/wd/hub"), chromeOptions);
+                Configuration.browser = Browsers.SAFARI;
+                break;
             default:
-                ChromeOptions chromeOptions1 = new ChromeOptions();
-                chromeOptions1.addArguments("--window-size=1920,1080");
-                chromeOptions1.addArguments("--disable-extensions");
-                chromeOptions1.addArguments("--disable-gpu");
-                chromeOptions1.addArguments("--ignore-certificate-errors");
-                chromeOptions1.addArguments("--no-sandbox");
-                chromeOptions1.addArguments("--disable-dev-shm-usage");
-                chromeOptions1.addArguments("--start-maximized");
-               if ("Y".equalsIgnoreCase(propertyManager.getProperty("HEADLESS"))){
-                   chromeOptions1.addArguments("--headless");
-               }
-               WebDriverManager.chromedriver().setup();
-               return new ChromeDriver(chromeOptions1);
+                Configuration.browser = Browsers.CHROME;
+                break;
         }
+    }
+    public static void open(String url) {
+        System.out.println(url);
+        Selenide.open(url);
+    }
+    public static WebDriver currentDriver() {
+        return WebDriverRunner.getWebDriver();
+    }
+    public static void maximize() {
+        currentDriver().manage().window().maximize();
+    }
+    public static void close() {
+        currentDriver().quit();
     }
 }

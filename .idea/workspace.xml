@@ -5,19 +5,38 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="930a0d1b-3e20-43b1-872e-d2b177c17f8c" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/common/PageFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/common/PageFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/common/PageManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/common/PageManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/drivers/DriverFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/drivers/DriverFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/pages/AddRecord.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/pages/AddRecord.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/pages/BasePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/pages/BasePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/pages/ElementsButtons.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/pages/ElementsButtons.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/test/AddRecordTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/test/AddRecordTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/test/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/test/BaseTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/test/ElementsButtonsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/test/ElementsButtonsTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/config.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/config.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 5
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 5
+}</component>
   <component name="ProjectId" id="2kbvTsgwE16tEVh1gWD4R1GcKrw" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -27,10 +46,65 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "TestNG.AddRecordTest.executor": "Run",
+    "TestNG.ElementsButtonsTest.executor": "Run",
     "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/emred/workspace/Selenide_test_odev",
     "onboarding.tips.debug.path": "C:/Users/emred/workspace/Selenide_test_odev/src/main/java/org/example/Main.java"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\emred\workspace\Selenide_test_odev\src\test\java" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\emred\workspace\Selenide_test_odev\src\test\resources" />
+      <recent name="C:\Users\emred\workspace\Selenide_test_odev\src\test" />
+    </key>
+  </component>
+  <component name="RunManager" selected="TestNG.AddRecordTest">
+    <configuration name="AddRecordTest" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="Selenide_test_odev" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.test" />
+      <option name="MAIN_CLASS_NAME" value="org.test.AddRecordTest" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ElementsButtonsTest" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="Selenide_test_odev" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.test" />
+      <option name="MAIN_CLASS_NAME" value="org.test.ElementsButtonsTest" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="TestNG.AddRecordTest" />
+        <item itemvalue="TestNG.ElementsButtonsTest" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
