@@ -1,0 +1,8 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Cucumber Tests" verbose="1" parallel="tests" thread-count="2" configfailurepolicy="continue">
+    <test name="Test 1">
+        <classes>
+            <class name="org.common.TestRunner"/>
+        </classes>
+    </test>
+</suite>

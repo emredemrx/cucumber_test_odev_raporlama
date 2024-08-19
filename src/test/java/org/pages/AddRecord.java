@@ -19,6 +19,7 @@ public class AddRecord extends BasePage {
 
     public SelenideElement departmentText = $(".rt-tbody > div:nth-of-type(4) div:nth-of-type(6)");
     public SelenideElement salaryText = $(".rt-tbody > div:nth-of-type(4) div:nth-of-type(5)");
+    public SelenideElement nameText = $(".rt-tbody > div:nth-of-type(4) > .rt-tr > div:nth-of-type(1)");
 
 
     public AddRecord(String pageUrl) {
@@ -33,7 +34,9 @@ public class AddRecord extends BasePage {
         departmentInput.setValue(department);
         //submitButton.click();
     }
-
+    public String getNameText (){
+        return nameText.getText();
+    }
     public String getdepartmentText (){
         return departmentText.getText();
     }
