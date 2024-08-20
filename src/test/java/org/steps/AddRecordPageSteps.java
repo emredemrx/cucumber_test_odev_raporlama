@@ -27,7 +27,11 @@ public class AddRecordPageSteps extends BaseTest {
         pageManager.addRecord.addButton.click();
         assertThat(pageManager.addRecord.submitButton.isDisplayed()).isTrue();
     }
+    @And("The personnel information is filled in {string} and {string} and {string} and {string} and {string} and {string}")
+    public void thePersonnelInformationIsFilledInAndAndAndAndAnd(String arg0, String arg1, String arg2, String arg3, String arg4, String arg5) {
+        pageManager.addRecord.dataAdd(arg0,arg1,arg2,arg3,arg4,arg5);
 
+    }
     @Then("click on the submit button")
     public void clickOnTheSubmitButton() {
         assertThat(pageManager.addRecord.submitButton.isDisplayed()).isTrue();
@@ -56,26 +60,4 @@ public class AddRecordPageSteps extends BaseTest {
         assertThat(pageManager.addRecord.getNameText()).isEqualTo(arg0);
     }
 
-    @And("The personnel information is filled in {string} and {string} and {string} and {string} and {string} and {string}")
-    public void thePersonnelInformationIsFilledInAndAndAndAndAnd(String arg0, String arg1, String arg2, String arg3, String arg4, String arg5) {
-        //pageManager.addRecord.dataAdd(arg0,arg1,arg2,arg3,arg4,arg5);
-        pageManager.addRecord.firstNameInput.setValue(arg0);
-        pageManager.addRecord.lastNameInput.setValue(arg1);
-        pageManager.addRecord.userEmailInput.setValue(arg2);
-        pageManager.addRecord.ageInput.setValue(arg3);
-        pageManager.addRecord.salaryInput.setValue(arg4);
-        pageManager.addRecord.departmentInput.setValue(arg5);
-    }
-
-    @And("The personnel {string} are written.")
-    public void thePersonnelAreWritten(String arg0) {
-        System.out.println(arg0);
-        pageManager.addRecord.firstNameInput.setValue(arg0);
-    }
-    //And The personnel information is filled in '<Firstname>' and '<Lastname>' and '<Mail>' and '<Age>' and '<Salary>' and '<Department>'
-//    And The personnel '<lastname>' are written.
-//    And The personnel '<mail>' are written.
-//    And The personnel '<age>'  are written.
-//    And The personnel '<salary>' are written.
-//    And The personnel '<department>' are written.
 }

@@ -5,18 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="930a0d1b-3e20-43b1-872e-d2b177c17f8c" name="Changes" comment="odev">
-      <change afterPath="$PROJECT_DIR$/.idea/kotlinc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/org/common/TestRunner.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/org/steps/AddRecordPageSteps.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/org/steps/ElementsPageSteps.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/features/AddRecordPage.feature" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/features/ElementsPage.feature" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/testng.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/pages/AddRecord.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/pages/AddRecord.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/test/AddRecordTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/test/ElementsButtonsTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/steps/AddRecordPageSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/steps/AddRecordPageSteps.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
