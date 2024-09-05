@@ -5,8 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="930a0d1b-3e20-43b1-872e-d2b177c17f8c" name="Changes" comment="odev">
+      <change afterPath="$PROJECT_DIR$/Jenkinsfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/steps/BaseSteps.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/allure.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/common/TestRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/common/TestRunner.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/org/steps/AddRecordPageSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/steps/AddRecordPageSteps.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/steps/ElementsPageSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/steps/ElementsPageSteps.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/features/AddRecordPage.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/AddRecordPage.feature" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,32 +39,40 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Cucumber Java.Feature: AddRecordPage.executor&quot;: &quot;Run&quot;,
-    &quot;Cucumber Java.Feature: ElementsPage.executor&quot;: &quot;Run&quot;,
-    &quot;Cucumber Java.Scenario: .executor&quot;: &quot;Run&quot;,
-    &quot;Cucumber Java.Scenario: Adding and updating personnel to the table is controlled.executor&quot;: &quot;Run&quot;,
-    &quot;Cucumber Java.Scenario: Sayfa acilir.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;TestNG.AddRecordTest.executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.ElementsButtonsTest.executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.TestRunner.executor&quot;: &quot;Run&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/emred/workspace/cucumber_test_odev/src&quot;,
-    &quot;onboarding.tips.debug.path&quot;: &quot;C:/Users/emred/workspace/Selenide_test_odev/src/main/java/org/example/Main.java&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Cucumber Java.Feature: AddRecordPage.executor": "Coverage",
+    "Cucumber Java.Feature: ElementsPage.executor": "Run",
+    "Cucumber Java.Scenario: .executor": "Run",
+    "Cucumber Java.Scenario: Adding and updating personnel to the table is controlled.executor": "Run",
+    "Cucumber Java.Scenario: Sayfa acilir.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "TestNG.AddRecordTest.executor": "Run",
+    "TestNG.ElementsButtonsTest.executor": "Run",
+    "TestNG.TestRunner.executor": "Run",
+    "ignore.virus.scanning.warn.message": "true",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/emred/workspace/cucumber_test_odev_raporlama",
+    "onboarding.tips.debug.path": "C:/Users/emred/workspace/Selenide_test_odev/src/main/java/org/example/Main.java",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "preferences.pluginManager"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\emred\workspace\cucumber_test_odev_raporlama" />
       <recent name="C:\Users\emred\workspace\Selenide_test_odev\src\test\java" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\emred\workspace\cucumber_test_odev\src" />
       <recent name="C:\Users\emred\workspace\Selenide_test_odev\src\test\resources" />
       <recent name="C:\Users\emred\workspace\Selenide_test_odev\src\test" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="org.steps" />
     </key>
   </component>
   <component name="RunManager" selected="Cucumber Java.Feature: AddRecordPage">
@@ -162,8 +177,8 @@
     <recent_temporary>
       <list>
         <item itemvalue="Cucumber Java.Feature: AddRecordPage" />
-        <item itemvalue="Cucumber Java.Scenario: Adding and updating personnel to the table is controlled" />
         <item itemvalue="Cucumber Java.Feature: ElementsPage" />
+        <item itemvalue="Cucumber Java.Scenario: Adding and updating personnel to the table is controlled" />
         <item itemvalue="Cucumber Java.Scenario: Sayfa acilir" />
         <item itemvalue="Cucumber Java.Scenario: " />
       </list>
@@ -214,5 +229,10 @@
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/cucumber_test_odev_raporlama$Feature__AddRecordPage.ic" NAME="Feature: AddRecordPage Coverage Results" MODIFIED="1725564780414" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true">
+      <FILTER>io.cucumber.core.cli.*</FILTER>
+    </SUITE>
   </component>
 </project>

@@ -1,5 +1,6 @@
 Feature: Adding and updating personnel to the table is controlled
 
+  @add
   Scenario Outline: Adding and updating personnel to the table is controlled
     Given Open the web tables site
     When Click on the Add Button

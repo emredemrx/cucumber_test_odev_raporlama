@@ -8,7 +8,7 @@ import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.common.PageManager;
 import org.test.BaseTest;
-
+import io.qameta.allure.Step;
 import java.util.List;
 import java.util.Map;
 
